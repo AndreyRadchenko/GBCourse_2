@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 
 public class ChatServer implements ServerSocketThreadListener, SocketThreadListener {
 
-    ServerSocketThread server;
+    private ServerSocketThread server;
     private final DateFormat DATE_FORMAT = new SimpleDateFormat("HH:mm:ss: ");
 
     public void start(int port) {
